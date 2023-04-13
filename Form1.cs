@@ -28,7 +28,10 @@ namespace CalculadoraWP
             if ((display.Text == "0") || operacionPulsada) display.Clear();
             operacionPulsada = false;
             Button b = (Button)sender;
-            display.Text = display.Text + b.Text;
+            if ((b.Text == "." && !display.Text.Contains('.')) || (b.Text!="."))
+            {
+                display.Text = display.Text + b.Text;
+            }
         }
         
         private void btn_Operador(object sender, EventArgs e)

@@ -320,7 +320,6 @@ namespace CalculadoraWP
             this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
